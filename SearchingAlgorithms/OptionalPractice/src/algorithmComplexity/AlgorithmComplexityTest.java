@@ -10,13 +10,16 @@ public class AlgorithmComplexityTest {
         System.out.println("Muon nhap chuoi gi? ");
         String inputString = sc.nextLine();
 
-        int[] frequentChar = new int[255];
-        for (int i = 0; i < inputString.length(); i++) {
+        int[] frequentChar = new int[255];                  //1
+        for (int i = 0; i < inputString.length(); i++) {        //2inputString.length
 
             int ascii = (int) inputString.charAt(i);
 
             frequentChar[ascii] += 1;
 
+        }
+        for (int i = 0; i < frequentChar.length; i++) {
+            System.out.println(frequentChar[i]);
         }
 
         int max = 0;
