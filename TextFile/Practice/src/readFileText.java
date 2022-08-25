@@ -24,7 +24,7 @@ public class readFileText {
             br.close();
             System.out.println("Tong " + sum);
         } catch (Exception e) {
-            System.out.println("File khong ton tai hoac co noi dung loi");
+            System.err.println("File khong ton tai hoac co noi dung loi");
         }
 
     }
@@ -34,8 +34,8 @@ public class readFileText {
         Scanner scanner = new Scanner(System.in);
         String path = scanner.nextLine();
 
-         readfileEx = new ReadFileExample();
-        readfileEx.readFileText(path);
+        readFileText readFileText = new readFileText();
+        readFileText.readFileText(path);
 
     }
 
